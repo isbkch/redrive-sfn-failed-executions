@@ -1,10 +1,13 @@
 import boto3
 from datetime import datetime, timedelta, timezone
 
-# Your AWS region
-region_name = 'us-east-1'
+# CHANGE THESE VARIABLES
+region_name = 'YOUR_REGION_NAME'
+account_id = 'YOUR_ACCOUNT_ID'
+state_machine_name = 'YOUR_STATE_MACHINE_NAME'
+
 # ARN of the Step Functions state machine
-state_machine_arn = 'arn:aws:states:us-east-1:524744845066:stateMachine:EventsWrangler'
+state_machine_arn = 'arn:aws:states:{}:{}:stateMachine:{}'.format(region_name, account_id, state_machine_name)
 
 # Create a Step Functions client
 client = boto3.client('stepfunctions', region_name=region_name)
