@@ -1,5 +1,8 @@
+# What Is This?
 
-# How To
+A simple python script that uses the [redrive-execution](https://docs.aws.amazon.com/cli/latest/reference/stepfunctions/redrive-execution.html) command to redrive a failed step function execution.
+
+## How To
 
 ```bash
 python3 -m venv .venv
