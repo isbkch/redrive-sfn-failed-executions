@@ -6,7 +6,7 @@ A simple python script that uses the [redrive-execution](https://docs.aws.amazon
 
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate.fish
+source .venv/bin/activate.fish # Change to use your own shell
 pip install boto3
 python script.py --profile YOUR_PROFILE --region YOUR_REGION
 ```
